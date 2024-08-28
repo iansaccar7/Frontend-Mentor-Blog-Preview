@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Figtree", system-ui;
+    background-color: #f5df4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 39rem;
+    height: 53rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    border: .1rem solid black;
+    box-shadow: .6rem .6rem black;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    width: 100%; /* Garante que a seção ocupe toda a largura do card */
+    height: 25rem; /* Altura da seção para a imagem */
+    margin-top: 1rem;
+}
+
+.image-section img {
+    width: 34rem; /* Ajusta a largura da imagem para 100% da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 1.5rem;
+    margin-top: .8rem;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+.label {
+    background-color: #f5df4d;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: .2rem .8rem;
+    margin-bottom: 1.2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+.date {
+    color: hsl(0, 0%, 42%);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.description {
+    color: hsl(0, 0%, 7%);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 3.5rem 0 2rem 0;
+}
+
+.author img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.author span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
